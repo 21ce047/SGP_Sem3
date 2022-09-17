@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+             <div class="icon"></div>
+                <h2 class="logo">Food-ASH</h2>
+             <div class="menu">
+                <ul>
+                    
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    
+                    
+                </ul>
+             </div>
+             
+            
+              <div class="autocomplete" style="width:300px;">
+                <input id="myInput" type="text" name="myCountry" placeholder="Country" value="" onchange="openpage()">
+                <script>
+                  function openpage()
+                  {
+                      var x =document.getElementById("myInput").value;
+                      if( x=== "Burger" )
+                      {
+                          window.open("https://www.google.com/search?q=burger&client=opera&hs=11H&sxsrf=ALiCzsZYywz8WNwCNf7gahj4XYP0abpS5w%3A1663344966012&ei=RqEkY7gr4LHj4Q_mt4z4AQ&ved=0ahUKEwi45tnu2pn6AhXg2DgGHeYbAx8Q4dUDCA0&uact=5&oq=burger&gs_lcp=Cgdnd3Mtd2l6EAMyDQguELEDEMcBENEDEEMyBwgAELEDEEMyCwgAEIAEELEDEIMBMgsILhCABBCxAxDUAjILCAAQgAQQsQMQyQMyBQgAEJIDMgUIABCSAzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzoKCAAQRxDWBBCwAzoHCAAQsAMQQzoNCAAQ5AIQ1gQQsAMYAToSCC4QxwEQ0QMQyAMQsAMQQxgCOgwILhDIAxCwAxBDGAI6BAgjECc6CwguEIAEELEDEIMBOgQIABBDOggIABCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6BQgAEIAEOg0ILhDHARDRAxDUAhBDOgcILhDUAhBDOgoILhDHARDRAxBDOhEILhCABBCxAxCDARDHARCvAUoECEEYAEoECEYYAVD-BVieDWDiEmgDcAF4AIABrwKIAc0MkgEFMi01LjGYAQCgAQHIARHAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz")
+                      }
+
+                      else if(x=== "Sandwich")
+                      {
+                        window.open("https://www.google.com/search?client=opera&q=sandwich&sourceid=opera&ie=UTF-8&oe=UTF-8");
+                      }
+
+                      else if(x=== "Frankie")
+                      {
+                        window.open("https://www.google.com/search?q=frankie&client=opera&hs=0ec&sxsrf=ALiCzsYXQeg67j4cj_NE0hWFRY6GwZTO0Q%3A1663344822871&ei=tqAkY9TYNMHg4-EP64a-iAc&ved=0ahUKEwjUi7mq2pn6AhVB8DgGHWuDD3EQ4dUDCA0&uact=5&oq=frankie&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBAgAEEMyCwguEIAEEMcBEK8BMg4IABCABBCxAxCDARDJAzIFCAAQkgMyBQgAEJIDMgsILhCABBDHARCvATIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDoKCAAQRxDWBBCwAzoHCAAQsAMQQzoNCAAQ5AIQ1gQQsAMYAToPCC4Q1AIQyAMQsAMQQxgCOhIILhDHARDRAxDIAxCwAxBDGAI6DAguEMgDELADEEMYAjoECCMQJzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOgsILhCABBCxAxDUAjoECC4QQzoQCC4QsQMQgwEQxwEQ0QMQQzoKCC4QsQMQ1AIQQzoICC4QgAQQsQM6CAgAELEDEIMBSgQIQRgASgQIRhgBUNsIWPMRYIwUaANwAXgAgAGNAogBnw2SAQMyLTeYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz");
+                      }
+                      else if( x==="Puff")
+                      {
+                        window.open("https://www.google.com/search?q=puff&client=opera&hs=kfc&sxsrf=ALiCzsa54wZLvgTk4FKRwwFp29bBPMYIOw%3A1663344868211&ei=5KAkY7PHDICN4-EPnJWP8A8&ved=0ahUKEwizyYjA2pn6AhWAxjgGHZzKA_4Q4dUDCA0&uact=5&oq=puff&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEJECMgoIABCxAxCDARBDMgcIABCxAxBDMggILhCxAxCRAjIICAAQgAQQsQMyCAgAELEDEIMBMggIABCxAxCDATIICAAQsQMQgwEyCAgAELEDEIMBMggIABCABBCxAzoKCAAQRxDWBBCwAzoHCAAQsAMQQzoNCAAQ5AIQ1gQQsAMYAToSCC4QxwEQ0QMQyAMQsAMQQxgCOgwILhDIAxCwAxBDGAI6DwguENQCEMgDELADEEMYAjoECCMQJzoLCAAQgAQQsQMQgwE6BwguENQCEEM6BQgAEIAEOgsILhCABBCxAxCDAToICC4QgAQQsQNKBAhBGABKBAhGGAFQ0AVYnQtg1gxoA3ABeACAAZMCiAH-BZIBAzItM5gBAKABAcgBE8ABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz");
+                      }
+                      else if(x==="Thali")
+                      {
+                        window.open("search.html");
+                      }
+                      else if(x=== "Yogi Canteen")
+                      {
+                        window.open("Yogi.html");
+                      }
+                  }
+              </script>
+              <input type="submit"> 
+              </div>
+              
+           
+
+    
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="Yogi.html">
+        <img src="Yogi_photo.jpeg" alt="Mountains" width="50" height="50">
+      </a>
+      <a target="_blank" href="Yogi.html">
+      <div class="desc">Yogi Canteen</div>
+      </a>
+    </div>
+    <script>
+         var countries = ["Burger","Sandwich","Frankie","Puff","Thali","Shreeji Canteen","Yogi Canteen","Danny's Place","Ice-berg","Wagh- Bakri"];
+
+        function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+      x[i].parentNode.removeChild(x[i]);
+    }
+  }
+}
+/*execute a function when someone clicks in the document:*/
+document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+});
+}
+    </script>
+<script>
+    autocomplete(document.getElementById("myInput"), countries);
+</script>
+
+</body>
+</html>
