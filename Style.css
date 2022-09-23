@@ -1,9 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    cursor: url('337032.png'), default;
 
 
 }
+
+
 
 .main {
     width: 100%;
@@ -221,4 +224,62 @@ div.gallery img {
 div.desc {
     padding: 30px;
     text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(184, 241, 13);
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+}
+
+div.gallery {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 5px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 30px;
+    text-align: center;
+}
+
+.topnav input[type=text] {
+    border: 1px solid #ccc;
 }
